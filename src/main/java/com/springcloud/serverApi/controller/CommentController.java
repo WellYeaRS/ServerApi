@@ -17,6 +17,7 @@ public class CommentController {
     @Autowired
     private CommentService commentService;
 
+    //这个接口时添加评论controller
     @PostMapping(value = "/addComment")
     public Result addComment(@RequestParam(name = "bookCtrlNo")long bookId,
                              String content){
